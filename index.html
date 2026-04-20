@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Produto - Loja de Roupas</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="page">
+  <div id="toast" class="toast"></div>
+
+  <form id="form" class="card" novalidate>
+    <h1 class="form-title">Cadastro de roupa</h1>
+    <p class="form-sub">
+      Campos com <span class="required">*</span> são obrigatórios
+    </p>
+
+    <!-- Nome -->
+    <div class="field" data-field="nome">
+      <label>Nome do produto <span class="required">*</span></label>
+      <input id="nome" type="text" placeholder="Ex: Camiseta básica">
+      <span class="feedback"></span>
+    </div>
+
+    <!-- Categoria -->
+    <div class="field" data-field="categoria">
+      <label>Categoria <span class="required">*</span></label>
+      <select id="categoria">
+        <option value="">Selecione</option>
+        <option>Camisetas</option>
+        <option>Calças</option>
+        <option>Vestidos</option>
+        <option>Jaquetas</option>
+      </select>
+      <span class="feedback"></span>
+    </div>
+
+    <!-- Gênero -->
+    <div class="field" data-field="genero">
+      <label>Gênero <span class="required">*</span></label>
+      <select id="genero">
+        <option value="">Selecione</option>
+        <option>Masculino</option>
+        <option>Feminino</option>
+        <option>Unissex</option>
+      </select>
+      <span class="feedback"></span>
+    </div>
+
+    <!-- Tamanho -->
+    <div class="field" data-field="tamanho">
+      <label>Tamanho <span class="required">*</span></label>
+      <select id="tamanho">
+        <option value="">Selecione</option>
+        <option>P</option>
+        <option>M</option>
+        <option>G</option>
+        <option>GG</option>
+      </select>
+      <span class="feedback"></span>
+    </div>
+
+    <!-- Cor -->
+    <div class="field" data-field="cor">
+      <label>Cor <span class="required">*</span></label>
+      <input id="cor" type="text" placeholder="Ex: Preto">
+      <span class="feedback"></span>
+    </div>
+
+    <!-- Preço -->
+    <div class="field" data-field="preco">
+      <label>Preço <span class="required">*</span></label>
+      <input id="preco" type="text" placeholder="R$ 0,00">
+      <span class="feedback"></span>
+    </div>
+
+    <!-- Quantidade -->
+    <div class="field" data-field="qtd">
+      <label>Quantidade <span class="required">*</span></label>
+      <input id="qtd" type="number" min="0">
+      <span class="feedback"></span>
+    </div>
+
+    <!-- Descrição -->
+    <div class="field">
+      <label>Descrição</label>
+      <textarea id="desc" placeholder="Ex: 100% algodão, confortável"></textarea>
+    </div>
+
+    <div class="actions">
+      <button type="button" id="cancel">Cancelar</button>
+      <button type="submit" id="save">Salvar</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

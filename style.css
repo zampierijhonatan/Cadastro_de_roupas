@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.card {
+  background: #1f1f1f;
+  padding: 24px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.form-title {
+  margin-bottom: 10px;
+}
+
+.form-sub {
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.required {
+  color: #DC2626;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* Campos */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  border-color: #2563EB;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+/* Estados */
+.field.error input,
+.field.error select {
+  border-color: #DC2626;
+}
+
+.field.success input,
+.field.success select {
+  border-color: #16A34A;
+}
+
+.feedback {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.field.error .feedback { color: #DC2626; }
+.field.success .feedback { color: #16A34A; }
+
+/* Botões */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#save {
+  background: #2563EB;
+  color: white;
+  border: none;
+}
+
+#cancel {
+  background: transparent;
+  border: 1px solid #555;
+  color: white;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  top: 20px;
+  background: #16A34A;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: none;
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #111;
+  color: #fff;
+  min-height: 80px;
+}
